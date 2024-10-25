@@ -1,0 +1,20 @@
+# Pedimos al usuario que ingrese una palabra o frase
+texto = input("Ingresa una palabra o frase: ").lower()
+
+# Inicializamos contadores para cada vocal
+conteo_vocales = {
+    'a': 0,
+    'e': 0,
+    'i': 0,
+    'o': 0,
+    'u': 0
+}
+
+# Iteramos por cada letra en el texto ingresado
+for letra in texto:
+    if letra in conteo_vocales:
+        conteo_vocales[letra] += 1
+
+# Mostramos el conteo de cada vocal
+for vocal, conteo in conteo_vocales.items():
+    print(f"La vocal '{vocal}' aparece {conteo} veces.")
