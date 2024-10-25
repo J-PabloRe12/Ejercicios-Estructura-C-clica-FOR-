@@ -1,0 +1,14 @@
+# Pedimos al usuario que ingrese una lista de palabras
+palabras = input("Ingresa una lista de palabras (separadas por espacios): ")
+
+# Pedimos al usuario que ingrese una letra
+letra = input("Ingresa la letra con la que deben comenzar las palabras: ")
+
+# Convertimos la entrada en una lista
+lista_palabras = palabras.split()
+
+# Imprimimos las palabras que comienzan con la letra indicada
+print("Palabras que comienzan con la letra '{}':".format(letra))
+for palabra in lista_palabras:
+    if palabra.startswith(letra):
+        print(palabra)
