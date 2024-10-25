@@ -1,0 +1,16 @@
+# Pedimos al usuario que ingrese una lista de números
+numeros = input("Ingresa una lista de números (separados por espacios): ")
+
+# Convertimos la entrada en una lista de números
+lista_numeros = [int(num) for num in numeros.split()]
+
+# Inicializamos la suma de los números pares
+suma_pares = 0
+
+# Iteramos sobre la lista de números
+for numero in lista_numeros:
+    if numero % 2 == 0:  # Verificamos si el número es par
+        suma_pares += numero  # Sumamos el número par a la suma
+
+# Imprimimos la suma de los números pares
+print("La suma de los números pares es:", suma_pares)
