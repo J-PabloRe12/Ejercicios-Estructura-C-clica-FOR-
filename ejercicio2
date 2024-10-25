@@ -1,0 +1,13 @@
+# Pedimos al usuario que ingrese una lista de nombres
+nombres = input("Ingresa una lista de nombres (separados por comas): ")
+
+# Convertimos la entrada en una lista
+lista_nombres = nombres.split(',')
+
+# Ordenamos la lista
+lista_nombres.sort()
+
+# Imprimimos la lista en orden alfabético
+print("Lista de nombres en orden alfabético:")
+for nombre in lista_nombres:
+    print(nombre)
